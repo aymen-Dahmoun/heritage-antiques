@@ -8,15 +8,17 @@
   gap: var(--p-space-300);
   width: max-content;
   max-width: min(520px, calc(100vw - 32px));
-  padding: 12px 14px;
+  padding: 14px 18px;
+  border: 1px solid var(--p-vintage-green-light);
   border-radius: var(--p-radius-200);
-  background: var(--p-surface-inverse);
-  color: var(--p-text-inverse);
-  box-shadow: var(--p-shadow-300);
+  background: var(--p-vintage-green-dark);
+  color: var(--p-text-on-primary);
+  box-shadow: 0 12px 32px -4px rgba(16, 34, 23, 0.45);
+  font-family: var(--p-font-sans);
   font-size: var(--p-font-size-xs);
   line-height: 1.5;
   transform: translateX(-50%);
-  animation: toast-in 180ms ease-out;
+  animation: toast-in 220ms ease-out;
 }
 
 .toast > svg {
@@ -25,11 +27,11 @@
 }
 
 .toast--success > svg {
-  color: #8fe3b0;
+  color: var(--p-accent-gold-light);
 }
 
 .toast--info > svg {
-  color: #9ec6ff;
+  color: var(--p-accent-gold);
 }
 
 .toast p {
@@ -45,18 +47,18 @@
   border: 0;
   border-radius: var(--p-radius-100);
   background: transparent;
-  color: var(--p-text-inverse);
+  color: var(--p-text-on-primary);
   cursor: pointer;
 }
 
 .toast button:hover {
-  background: rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.15);
 }
 
 @keyframes toast-in {
   from {
     opacity: 0;
-    transform: translate(-50%, 8px);
+    transform: translate(-50%, 12px);
   }
 
   to {

@@ -1,51 +1,80 @@
 :root {
   color-scheme: light;
 
-  --p-canvas: #f1f2f3;
-  --p-surface: #ffffff;
-  --p-surface-subdued: #fafbfb;
-  --p-surface-hover: #f6f6f7;
-  --p-surface-pressed: #f1f2f3;
-  --p-surface-warm: #f5f2ec;
-  --p-surface-inverse: #202223;
-  --p-backdrop: rgba(32, 34, 35, 0.54);
+  /* Off-White Canvas & Surfaces (Warm brown/cream/ecru undertones - NOT cool blue) */
+  --p-canvas: #f6f3eb;
+  --p-canvas-subtle: #fbf9f4;
+  --p-surface: #fdfbf7;
+  --p-surface-subdued: #f2ece0;
+  --p-surface-hover: #ebe3d4;
+  --p-surface-pressed: #dfd5c2;
+  --p-surface-warm: #ece3d3;
+  --p-surface-parchment: #f4ede1;
+  --p-surface-inverse: #122419;
+  --p-backdrop: rgba(16, 32, 23, 0.68);
 
-  --p-text-primary: #202223;
-  --p-text-subdued: #6d7175;
-  --p-text-disabled: #8c9196;
-  --p-text-on-primary: #ffffff;
-  --p-text-inverse: #f6f6f7;
+  /* Dark Vintage Green (Signature antique forest/estate green) */
+  --p-vintage-green-dark: #0f2217;
+  --p-vintage-green: #193828;
+  --p-vintage-green-medium: #224a35;
+  --p-vintage-green-light: #2d5a42;
+  --p-vintage-green-muted: #537562;
+  --p-vintage-green-tint: #ecf3ee;
+  --p-vintage-green-subdued: #e3ede6;
 
-  --p-action-primary: #005bd3;
-  --p-action-primary-hover: #004bb4;
-  --p-action-primary-pressed: #003c8f;
-  --p-action-primary-subdued: #eaf2fc;
-  --p-action-secondary: #ffffff;
-  --p-action-secondary-hover: #f6f6f7;
-  --p-action-secondary-border: #babec3;
+  /* Text Colors with Warm Bistre / Earth / Sepia undertones */
+  --p-text-primary: #1e1915;
+  --p-text-subdued: #675c51;
+  --p-text-disabled: #9e9386;
+  --p-text-on-primary: #fcf9f2;
+  --p-text-inverse: #f7f3ea;
+  --p-text-green: #193828;
+  --p-text-gold: #b38837;
 
-  --p-critical: #d72c0d;
-  --p-critical-hover: #bc2209;
-  --p-critical-surface: #fff4f4;
-  --p-critical-border: #e0b3b2;
-  --p-success: #108043;
-  --p-success-surface: #f1f8f5;
-  --p-success-border: #95c9b4;
-  --p-warning: #b98900;
-  --p-warning-surface: #fdf8e8;
-  --p-badge-neutral-bg: #e4e5e7;
-  --p-badge-neutral-text: #202223;
+  /* Primary Action Buttons & Accents */
+  --p-action-primary: #193828;
+  --p-action-primary-hover: #244e38;
+  --p-action-primary-pressed: #102419;
+  --p-action-primary-subdued: #e5eee8;
+  --p-action-secondary: #fdfbf7;
+  --p-action-secondary-hover: #f5efe4;
+  --p-action-secondary-border: #d7cbba;
 
-  --p-border: #d2d5d8;
-  --p-border-subdued: #e1e3e5;
-  --p-border-hover: #999ea4;
+  /* Warm Antique Gold & Burnished Brass Accents */
+  --p-accent-gold: #c29948;
+  --p-accent-gold-hover: #ad8335;
+  --p-accent-gold-light: #dec07d;
+  --p-accent-gold-dark: #826021;
+  --p-accent-gold-subdued: #f7f1e2;
+  --p-accent-gold-border: #dfcb9f;
 
+  /* Status Colors (Adjusted for vintage warmth) */
+  --p-critical: #c0321a;
+  --p-critical-hover: #a52611;
+  --p-critical-surface: #fdf2f0;
+  --p-critical-border: #e8bfb8;
+  --p-success: #193828;
+  --p-success-surface: #eef5f1;
+  --p-success-border: #b8d4c3;
+  --p-warning: #9e6f0b;
+  --p-warning-surface: #fbf5e7;
+  --p-badge-neutral-bg: #ece5d6;
+  --p-badge-neutral-text: #2c251f;
+
+  /* Borders & Dividers */
+  --p-border: #ded4c2;
+  --p-border-subdued: #eae2d3;
+  --p-border-hover: #c4b69f;
+  --p-border-gold: #c29948;
+
+  /* Border Radii */
   --p-radius-100: 4px;
   --p-radius-200: 8px;
   --p-radius-300: 12px;
   --p-radius-400: 16px;
   --p-radius-pill: 9999px;
 
+  /* Spacing Scale */
   --p-space-100: 4px;
   --p-space-200: 8px;
   --p-space-300: 12px;
@@ -58,29 +87,34 @@
   --p-space-1600: 64px;
   --p-space-2000: 80px;
 
+  /* Shadows with warm sepia/umber occlusion */
   --p-shadow-100:
-    0 0 0 1px rgba(63, 63, 68, 0.05),
-    0 1px 3px 0 rgba(63, 63, 68, 0.15);
+    0 1px 3px rgba(33, 27, 22, 0.07),
+    0 0 0 1px rgba(33, 27, 22, 0.05);
   --p-shadow-200:
-    0 0 0 1px rgba(63, 63, 68, 0.07),
-    0 4px 12px 0 rgba(63, 63, 68, 0.12);
+    0 4px 16px -2px rgba(30, 24, 19, 0.1),
+    0 0 0 1px rgba(30, 24, 19, 0.06);
   --p-shadow-300:
-    0 3px 6px -3px rgba(23, 24, 24, 0.08),
-    0 18px 40px -8px rgba(23, 24, 24, 0.24);
-  --p-shadow-drawer: -12px 0 40px rgba(0, 0, 0, 0.18);
-  --p-focus-ring: 0 0 0 3px rgba(0, 91, 211, 0.22);
+    0 12px 32px -4px rgba(25, 20, 16, 0.16),
+    0 4px 12px -2px rgba(25, 20, 16, 0.08);
+  --p-shadow-drawer: -12px 0 44px rgba(16, 26, 19, 0.28);
+  --p-focus-ring: 0 0 0 3px rgba(25, 56, 40, 0.28);
 
-  --p-font-sans:
-    -apple-system, BlinkMacSystemFont, "San Francisco", "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, sans-serif;
+  /* Typography Families */
+  --p-font-serif: "Playfair Display", "Cormorant Garamond", Georgia, serif;
+  --p-font-display: "Cinzel", "Playfair Display", Georgia, serif;
+  --p-font-sans: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+
   --p-font-size-xs: 0.75rem;
   --p-font-size-sm: 0.875rem;
   --p-font-size-base: 1rem;
   --p-font-size-lg: 1.25rem;
   --p-font-size-xl: 1.5rem;
   --p-font-size-2xl: 2rem;
-  --p-font-size-3xl: 2.625rem;
+  --p-font-size-3xl: 2.75rem;
+  --p-font-size-4xl: 3.5rem;
 
-  --p-transition-fast: 140ms ease;
-  --p-transition-base: 220ms ease;
+  --p-transition-fast: 150ms cubic-bezier(0.2, 0, 0, 1);
+  --p-transition-base: 240ms cubic-bezier(0.2, 0, 0, 1);
+  --p-transition-smooth: 380ms cubic-bezier(0.16, 1, 0.3, 1);
 }

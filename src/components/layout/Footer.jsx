@@ -1,33 +1,77 @@
+import { Link } from 'react-router-dom'
+import logoImage from '../../assets/logo.png'
+
 function Footer() {
   return (
     <footer className="site-footer">
       <div className="site-footer__inner">
         <div className="site-footer__brand">
-          <p className="brand__name">Heritage &amp; Co.</p>
+          <Link to="/" aria-label="Heritage & Co. home">
+            <img
+              src={logoImage}
+              alt="Heritage & Co."
+              className="site-footer__logo-img"
+            />
+          </Link>
+          <p className="site-footer__tagline">Antiquités, Instruments &amp; Objets d’Art</p>
           <p className="site-footer__description">
-            A fictional academic catalogue of antiquities and objets d’art,
-            built to demonstrate React and Redux state management.
+            A discreet international salon devoted to the acquisition,
+            scientific authentication, and conservation of historical
+            masterpieces.
           </p>
         </div>
 
         <div>
-          <p className="site-footer__label">Academic context</p>
-          <p>ENSTA · WAMD</p>
-          <p>TD / TP 2 · Redux global state</p>
-          <p>Academic year 2026</p>
+          <p className="site-footer__label">The Collection</p>
+          <ul className="site-footer__links">
+            <li>
+              <Link to="/catalog">All Antiquities (20)</Link>
+            </li>
+            <li>
+              <Link to="/catalog">Scientific Instruments</Link>
+            </li>
+            <li>
+              <Link to="/catalog">Numismatics &amp; Coins</Link>
+            </li>
+            <li>
+              <Link to="/catalog">Illuminated Manuscripts</Link>
+            </li>
+            <li>
+              <Link to="/catalog">Classical Antiquities</Link>
+            </li>
+          </ul>
         </div>
 
         <div>
-          <p className="site-footer__label">Catalogue notes</p>
-          <p>Every object is offered once, one of one.</p>
-          <p>No alcohol or barware is offered.</p>
-          <p>Images courtesy of Wikimedia Commons.</p>
+          <p className="site-footer__label">Curatorial Salon</p>
+          <ul className="site-footer__links">
+            <li>
+              <Link to="/about">Curatorial Philosophy</Link>
+            </li>
+            <li>
+              <Link to="/about">Conservation Ethics</Link>
+            </li>
+            <li>
+              <Link to="/inquire">Private Viewings</Link>
+            </li>
+            <li>
+              <Link to="/inquire">Institutional Loans</Link>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <p className="site-footer__label">Curation Protocol</p>
+          <p>Every object is unique and offered once.</p>
+          <p>Zero alcohol, spirits, or barware in curation.</p>
+          <p>Insured white-glove fine art transit worldwide.</p>
+          <p>Spectrometric &amp; TL scientific verification.</p>
         </div>
       </div>
 
       <div className="site-footer__bottom">
-        <p>© 2026 Heritage &amp; Co.</p>
-        <p>Objects and provenance are illustrative. No payment is processed.</p>
+        <p>© 2026 Heritage &amp; Co. Antiquaires. All rights reserved.</p>
+        <p>Curated museum demonstration · Objects &amp; provenance records are illustrative.</p>
       </div>
     </footer>
   )
