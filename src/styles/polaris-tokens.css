@@ -1,0 +1,86 @@
+:root {
+  color-scheme: light;
+
+  --p-canvas: #f1f2f3;
+  --p-surface: #ffffff;
+  --p-surface-subdued: #fafbfb;
+  --p-surface-hover: #f6f6f7;
+  --p-surface-pressed: #f1f2f3;
+  --p-surface-warm: #f5f2ec;
+  --p-surface-inverse: #202223;
+  --p-backdrop: rgba(32, 34, 35, 0.54);
+
+  --p-text-primary: #202223;
+  --p-text-subdued: #6d7175;
+  --p-text-disabled: #8c9196;
+  --p-text-on-primary: #ffffff;
+  --p-text-inverse: #f6f6f7;
+
+  --p-action-primary: #005bd3;
+  --p-action-primary-hover: #004bb4;
+  --p-action-primary-pressed: #003c8f;
+  --p-action-primary-subdued: #eaf2fc;
+  --p-action-secondary: #ffffff;
+  --p-action-secondary-hover: #f6f6f7;
+  --p-action-secondary-border: #babec3;
+
+  --p-critical: #d72c0d;
+  --p-critical-hover: #bc2209;
+  --p-critical-surface: #fff4f4;
+  --p-critical-border: #e0b3b2;
+  --p-success: #108043;
+  --p-success-surface: #f1f8f5;
+  --p-success-border: #95c9b4;
+  --p-warning: #b98900;
+  --p-warning-surface: #fdf8e8;
+  --p-badge-neutral-bg: #e4e5e7;
+  --p-badge-neutral-text: #202223;
+
+  --p-border: #d2d5d8;
+  --p-border-subdued: #e1e3e5;
+  --p-border-hover: #999ea4;
+
+  --p-radius-100: 4px;
+  --p-radius-200: 8px;
+  --p-radius-300: 12px;
+  --p-radius-400: 16px;
+  --p-radius-pill: 9999px;
+
+  --p-space-100: 4px;
+  --p-space-200: 8px;
+  --p-space-300: 12px;
+  --p-space-400: 16px;
+  --p-space-500: 20px;
+  --p-space-600: 24px;
+  --p-space-800: 32px;
+  --p-space-1000: 40px;
+  --p-space-1200: 48px;
+  --p-space-1600: 64px;
+  --p-space-2000: 80px;
+
+  --p-shadow-100:
+    0 0 0 1px rgba(63, 63, 68, 0.05),
+    0 1px 3px 0 rgba(63, 63, 68, 0.15);
+  --p-shadow-200:
+    0 0 0 1px rgba(63, 63, 68, 0.07),
+    0 4px 12px 0 rgba(63, 63, 68, 0.12);
+  --p-shadow-300:
+    0 3px 6px -3px rgba(23, 24, 24, 0.08),
+    0 18px 40px -8px rgba(23, 24, 24, 0.24);
+  --p-shadow-drawer: -12px 0 40px rgba(0, 0, 0, 0.18);
+  --p-focus-ring: 0 0 0 3px rgba(0, 91, 211, 0.22);
+
+  --p-font-sans:
+    -apple-system, BlinkMacSystemFont, "San Francisco", "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  --p-font-size-xs: 0.75rem;
+  --p-font-size-sm: 0.875rem;
+  --p-font-size-base: 1rem;
+  --p-font-size-lg: 1.25rem;
+  --p-font-size-xl: 1.5rem;
+  --p-font-size-2xl: 2rem;
+  --p-font-size-3xl: 2.625rem;
+
+  --p-transition-fast: 140ms ease;
+  --p-transition-base: 220ms ease;
+}
